@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv('/Users/Rodolfo/Desktop/pydata_pandas-master/data/coffees.csv')
+data = pd.read_csv('/coffees.csv')
 data.coffees = pd.to_numeric(data.coffees, errors='coerce')
 data = data.dropna()
 data.coffees = data.coffees.astype(int)
